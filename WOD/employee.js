@@ -648,8 +648,5 @@ var emp = [
       COMMISSION_PCT: " - ",
       MANAGER_ID: "123",
       DEPARTMENT_ID: "50"
-    },
-    {
-      EMPLOYEE_ID: ""
     }
   ]
