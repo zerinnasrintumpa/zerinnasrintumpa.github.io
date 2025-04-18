@@ -1,0 +1,35 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "BVHzqt8AAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Zerin Nasrin Tumpa",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=BVHzqt8AAAAJ&citpid=7",
+  "affiliation": "Graduate Teaching Assistant at University of Hawaii at Manoa",
+  "organization": 8949620348107476159,
+  "interests": [
+    "Data Mining",
+    "Business Intelligence",
+    "Machine Learning",
+    "AI in Healthcare"
+  ],
+  "email_domain": "@hawaii.edu",
+  "citedby": 183,
+  "citedby5y": 182,
+  "hindex": 8,
+  "hindex5y": 8,
+  "i10index": 6,
+  "i10index5y": 6,
+  "cites_per_year": {
+    "2020": 6,
+    "2021": 28,
+    "2022": 41,
+    "2023": 47,
+    "2024": 48,
+    "2025": 12
+  }
+}

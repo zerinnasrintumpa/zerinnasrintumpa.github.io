@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+  font-family: Duffish;
+  src: url('./fonts/Duffish.ttf');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body.home{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    background: url('./images/blob-haikei.svg') 
+                no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+body.portfolio .navbar{
+    border-bottom: 1px solid rgba(255, 234, 167, 0.5);
+    -webkit-box-shadow: 1px 4px 17px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 4px 17px -4px rgba(0,0,0,0.1);
+    box-shadow: 1px 4px 17px -4px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    padding: 20px;
+    z-index: 100;
+}
+
+.navbar-brand{
+    font-family: 'Duffish', 'sans-serif';
+    font-size: 40px;
+}
+
+.navbar-nav{
+    font-size: 1em;
+}
+
+.nav-item{
+    padding: 0px 15px;
+}
+
+.navbar-collapse{
+    flex-grow: initial;
+}
+
+.portfolio .nav-item a{
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid white;
+}
+
+.portfolio .nav-item a.active{
+    border-bottom: 2px solid #FFB700;
+}
+
+.portfolio .nav-item a:hover{
+    border-bottom: 2px solid #FFB700;
+}
+
+.home main .foreground{
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: url('./images/blob-haikei-mask.svg') 
+                no-repeat center center;
+    background-size: cover;
+    z-index: 50;
+}
+
+main .container{
+    position: relative;
+    font-family: Montserrat;
+    z-index: 100;
+}
+
+.home main .container .d-flex{
+    min-height: 70vh;
+}
+
+main .main-image{
+    position: absolute;
+    width: 40em;
+    top: 18%;
+    right: -3%;
+}
+
+main h1{
+    font-family: Montserrat;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+  
+main h3{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+main p{
+    margin-top: 40px;
+    font-family: Montserrat;
+}
+
+main .button-section{
+    margin-top: 40px;
+}
+
+main .button-section a{
+    border-radius: 0px;
+    color: black;
+    background-color: #ffeaa7;
+    border: 1px solid #ffeaa7;
+    padding: 15px 20px;
+    margin-right: 15px;
+}
+
+main .button-section a:hover{
+    background-color: #FFB700;
+    border: 1px solid #FFB700;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 3rem;
+    margin-top: 40px;
+}
+
+.social-icons a {
+    color: #333; 
+    font-size: 1.5rem; 
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FFB700;  
+}
+
+.card{
+    border-radius: 0;
+    border: 1px solid #E5E4E2;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio .left-column{
+    position: sticky;
+  top: 0;                  /* if you have a fixed navbar, bump this down by its height, e.g. top: 56px */
+  align-self: flex-start;  /* ensure it starts at the top of the flex container */
+  max-height: 100vh;       /* don’t grow past the viewport */
+  overflow-y: auto; 
+}
+
+.left-column .card:hover{
+    cursor: pointer;
+    border: 1px solid #ffeaa7;
+    background-color: #ffeaa7;
+    -webkit-box-shadow: 1px 4px 17px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 4px 17px -4px rgba(0,0,0,0.1);
+    box-shadow: 1px 4px 17px -4px rgba(0,0,0,0.1);
+}
+
+.left-column .card:hover .btn-primary{
+    border: 1px solid black;
+}
+
+.left-column .card:hover .btn-primary:hover{
+    border: 1px solid #FFB700;
+}
+
+.right-column .card, .right-column .card ul{
+    background-color: rgba(255, 234, 167, 0.3);
+    border: 1px solid rgba(255, 234, 167, 0.3);
+}
+
+.right-column .card ul li{
+    background-color: #FFF9E5;
+    border-bottom: 1px solid #ffeaa7;
+}
+
+.scholar .card:hover{
+    background-color: white;
+    border: 1px solid white;
+}
+
+img.img-fluid.scholar-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+.pub-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-primary{
+    border-radius: 0px;
+    color: black;
+    background-color: #ffeaa7;
+    border: 1px solid #ffeaa7;
+    padding: 10px 15px;
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+.btn-primary:hover{
+    background-color: #FFB700;
+    border: 1px solid #FFB700;
+    color: black;
+}
+
+.portfolio .container{
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 439px){
+    .navbar-collapse {
+        text-align: center;
+      }
+      .navbar-collapse .nav-item {
+        padding: 0;
+        margin-bottom: 0;
+        border: 1px solid rgba(0,0,0,0.05);
+      }
+  
+      main .main-image{
+        position: absolute;
+        width: 40em;
+        top: 43%;
+        right: -16%;
+      }
+  
+      body.home{
+          background-position: calc(50% - 200px) center;
+      }
+  
+      .home main .foreground{
+          background-position: calc(50% - 200px) center;
+      }
+      main .container{
+          background-color: rgba(255,255,255,0.5);
+      }
+}
+
+@media screen and (min-width: 440px) and (max-width: 850px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+    .navbar-collapse .nav-item {
+      padding: 0;
+      margin-bottom: 0;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    main .main-image{
+        position: absolute;
+        width: 29em;
+        top: 29%;
+        right: -7%;
+    }
+
+    body.home{
+        background-position: calc(50% - 200px) center;
+    }
+
+    .home main .foreground{
+        background-position: calc(50% - 200px) center;
+    }
+    main .container{
+        background-color: rgba(255,255,255,0.5);
+    }
+}
+
+
+@media screen and (min-width: 851px) and (max-width: 1024px){
+    main .main-image{
+        position: absolute;
+        width: 30em;
+        top: 29%;
+        right: -7%;
+    }
+
+    body.home{
+        background-position: calc(50% - 120px) center;
+    }
+
+    .home main .foreground{
+        background-position: calc(50% - 120px) center;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1050px){
+    main .main-image{
+        position: absolute;
+        width: 35em;
+        top: 18%;
+        right: -6%;
+    }
+    body.home{
+        background-position: calc(50% - 120px) center;
+    }
+
+    .home main .foreground{
+        background-position: calc(50% - 120px) center;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1440px){
+    main .main-image{
+        position: absolute;
+        width: 46em;
+        top: 18%;
+        right: -6%;
+    }
+}
+
+
+
+@media screen and (min-width: 1441px){
+    main .main-image{
+        position: absolute;
+        width: 70em;
+        top: 30%;
+        right: -6%;
+    }
+}

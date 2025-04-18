@@ -1,0 +1,25 @@
+<svg viewBox="0 0 900 600" width="900" height="600"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Define a mask where white = visible, black = transparent -->
+    <mask id="blob-hole-mask" maskUnits="userSpaceOnUse">
+      <!-- everything visible by default -->
+      <rect x="0" y="0" width="900" height="600" fill="white"/>
+      <!-- blob cut‑out -->
+      <path
+        d="M314.5 -416.5C398.2 -372.1 450.2 -267.6 459.4 -166.5C468.6 -65.3 434.9 32.5 395.2 120.3C355.5 208 309.7 285.6 242.8 348.2C175.9 410.8 88 458.4 -10.1 472.3C-108.2 486.2 -216.3 466.4 -269.8 399.4C-323.3 332.5 -322.1 218.4 -355.6 115.5C-389 12.7 -457 -79 -469.6 -187.3C-482.2 -295.7 -439.5 -420.9 -352 -464.2C-264.5 -507.4 -132.3 -468.7 -8.4 -457.1C115.4 -445.5 230.8 -461 314.5 -416.5"
+        transform="translate(905.4201 3.8286)"
+        fill="black"
+      />
+    </mask>
+  </defs>
+
+  <!-- Apply the mask to your background rect -->
+  <rect x="0" y="0" width="900" height="600"
+        fill="#FFFFFF"
+        mask="url(#blob-hole-mask)"/>
+
+  <!-- Now anything you place here (e.g. other SVG shapes or HTML behind the SVG) will show through the blob‑shaped hole -->
+
+</svg>
