@@ -150,19 +150,23 @@ main .button-section a:hover{
     color: #FFB700;  
 }
 
+.portfolio .btn-primary{
+    margin-bottom: 10px;
+}
+
 .card{
     border-radius: 0;
     border: 1px solid #E5E4E2;
     transition: all 0.2s ease-in-out;
 }
 
-.portfolio .left-column{
+/* .portfolio .left-column{
     position: sticky;
   top: 0;                  /* if you have a fixed navbar, bump this down by its height, e.g. top: 56px */
   align-self: flex-start;  /* ensure it starts at the top of the flex container */
   max-height: 100vh;       /* don’t grow past the viewport */
   overflow-y: auto; 
-}
+} */
 
 .left-column .card:hover{
     cursor: pointer;
@@ -254,6 +258,16 @@ img.img-fluid.scholar-image{
       main .container{
           background-color: rgba(255,255,255,0.5);
       }
+
+      .portfolio .container .d-flex{
+        flex-direction: column;
+      }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio .container .d-flex{
+        flex-direction: column;
+    }  
 }
 
 @media screen and (min-width: 440px) and (max-width: 850px) {
@@ -301,6 +315,13 @@ img.img-fluid.scholar-image{
     .home main .foreground{
         background-position: calc(50% - 120px) center;
     }
+    .portfolio .left-column{
+        position: sticky;
+      top: 0;                  /* if you have a fixed navbar, bump this down by its height, e.g. top: 56px */
+      align-self: flex-start;  /* ensure it starts at the top of the flex container */
+      max-height: 100vh;       /* don’t grow past the viewport */
+      overflow-y: auto; 
+    }
 }
 
 
@@ -318,6 +339,13 @@ img.img-fluid.scholar-image{
     .home main .foreground{
         background-position: calc(50% - 120px) center;
     }
+    .portfolio .left-column{
+        position: sticky;
+      top: 0;                  /* if you have a fixed navbar, bump this down by its height, e.g. top: 56px */
+      align-self: flex-start;  /* ensure it starts at the top of the flex container */
+      max-height: 100vh;       /* don’t grow past the viewport */
+      overflow-y: auto; 
+    }
 }
 
 @media screen and (min-width: 1051px) and (max-width: 1440px){
@@ -326,6 +354,13 @@ img.img-fluid.scholar-image{
         width: 46em;
         top: 18%;
         right: -6%;
+    }
+    .portfolio .left-column{
+        position: sticky;
+      top: 0;                  /* if you have a fixed navbar, bump this down by its height, e.g. top: 56px */
+      align-self: flex-start;  /* ensure it starts at the top of the flex container */
+      max-height: 100vh;       /* don’t grow past the viewport */
+      overflow-y: auto; 
     }
 }
 
@@ -337,5 +372,12 @@ img.img-fluid.scholar-image{
         width: 35em;
         top: 30%;
         right: -1%;
+    }
+    .portfolio .left-column{
+        position: sticky;
+      top: 0;                  /* if you have a fixed navbar, bump this down by its height, e.g. top: 56px */
+      align-self: flex-start;  /* ensure it starts at the top of the flex container */
+      max-height: 100vh;       /* don’t grow past the viewport */
+      overflow-y: auto; 
     }
 }
