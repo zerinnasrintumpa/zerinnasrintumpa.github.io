@@ -20,7 +20,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install scholarly
-        run: pip install scholarly
+        run: pip install scholarly==1.7.11 httpx==0.23.3
 
       - name: Fetch citations-per-year
         run: |
